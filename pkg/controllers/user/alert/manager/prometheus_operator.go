@@ -158,6 +158,8 @@ func Metric2Rule(groupID, ruleID, serverity, displayName, clusterName, projectNa
 
 	annotation := map[string]string{
 		"current_value": "{{ .Value }}",
+		"description":"Some descriptioin",
+		"summary":"some summary"
 	}
 
 	if projectName != "" {
